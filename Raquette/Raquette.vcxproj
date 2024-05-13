@@ -57,6 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RQ_PLATFORM_WINDOWS;RQ_BUILD_DLL;_WINDLL;$(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Raquette\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RQ_PLATFORM_WINDOWS;RQ_BUILD_DLL;_WINDLL;$(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Raquette\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,9 +82,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Raquette\Log.cpp" />
     <ClCompile Include="src\Raquette\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Raquette\Log.h" />
     <ClInclude Include="src\Raquette.h" />
     <ClInclude Include="src\Raquette\Application.h" />
     <ClInclude Include="src\Raquette\Core.h" />
