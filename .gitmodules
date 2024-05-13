@@ -1,0 +1,3 @@
+[submodule "RAquette/vendor/spdlog"]
+	path = RAquette/vendor/spdlog
+	url = https://github.com/gabime/spdlog
